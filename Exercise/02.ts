@@ -6,7 +6,7 @@ enum Direction {
 }
 
 function move(direction: Direction): string {
-  const moved: 'up' | 'down' | 'right' | 'left';
+  let moved: 'up' | 'down' | 'right' | 'left';
   
   switch (direction) {
     case Direction.east:
