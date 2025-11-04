@@ -10,15 +10,15 @@ class Person {
     return `Hi, I am ${this.name} and I am ${this.age} years old`;
   }
 }
-const somePerson = new Person(Maria, 35);
+const somePerson = new Person('Maria', 35);
 console.log(somePerson.introduce());
 
 //Using a shorthand constructor:
-class Person {
+/*class Person {
   constructor(public name: string, public age: number) {};
   introduce(): string {
     return `Hi, I am ${this.name} and I am ${this.age} years old`;
   }
 }
 const somePerson = new Person(Maria, 35);
-console.log(somePerson.introduce());
+console.log(somePerson.introduce());*/

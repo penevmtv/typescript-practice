@@ -1,12 +1,12 @@
 //Class inheritance:
-class Person {
-  constructor(protected name: string, protected age: number) {};
+class SomePerson {
+  constructor(public name: string, protected age: number) {};
   introduce(): string {
     return `Hi, I am ${this.name} and I am ${this.age} years old`;
   }
 }
 
-class Student extends Person {
+class Student extends SomePerson {
   readonly major: string;
   constructor(name: string, age: number, major: string) {
     super(name,age);
